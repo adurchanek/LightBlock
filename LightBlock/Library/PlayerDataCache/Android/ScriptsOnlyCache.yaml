@@ -11,11 +11,14 @@ ScriptsOnlyBuild:
     - Movement
     - Player
     - PlayerMovement
+    - PowerUp
     - PowerUpManager
     - Score
     - WaveSpawner
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.TextMeshPro.dll:
@@ -168,6 +171,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11206}
     - Class: 114
       Script: {instanceID: 11376}
+    - Class: 114
+      Script: {instanceID: 11658}
     - Class: 114
       Script: {instanceID: 11714}
     - Class: 114

@@ -132,6 +132,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Mirza Beig\_DOCS\README - Ultimate VFX.txt" />
     <None Include="Assets\Mirza Beig\_DOCS\README - Particle Force Fields.txt" />
+    <None Include="Assets\_Materials\UnlitAlpha.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Mirza Beig\_DOCS\README - Advanced Particle Scaler.txt" />
