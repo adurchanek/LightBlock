@@ -31,8 +31,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -75,33 +77,33 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 10918}
+      Script: {instanceID: 10920}
     - Class: 114
-      Script: {instanceID: 11192}
+      Script: {instanceID: 11194}
     - Class: 114
-      Script: {instanceID: 11714}
+      Script: {instanceID: 11716}
     - Class: 114
-      Script: {instanceID: 11748}
+      Script: {instanceID: 11750}
     - Class: 114
-      Script: {instanceID: 12228}
+      Script: {instanceID: 12230}
     - Class: 114
-      Script: {instanceID: 12504}
+      Script: {instanceID: 12506}
     - Class: 114
-      Script: {instanceID: 12522}
+      Script: {instanceID: 12524}
     - Class: 114
-      Script: {instanceID: 12618}
+      Script: {instanceID: 12620}
     - Class: 114
-      Script: {instanceID: 12744}
+      Script: {instanceID: 12746}
     - Class: 114
-      Script: {instanceID: 12824}
+      Script: {instanceID: 12826}
     - Class: 114
-      Script: {instanceID: 13032}
+      Script: {instanceID: 13034}
     - Class: 114
-      Script: {instanceID: 13162}
+      Script: {instanceID: 13164}
     - Class: 114
-      Script: {instanceID: 13302}
+      Script: {instanceID: 13304}
     - Class: 114
-      Script: {instanceID: 13340}
+      Script: {instanceID: 13342}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -158,41 +160,41 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 10918}
+      Script: {instanceID: 10920}
     - Class: 114
-      Script: {instanceID: 10934}
+      Script: {instanceID: 10936}
     - Class: 114
-      Script: {instanceID: 10950}
+      Script: {instanceID: 10952}
     - Class: 114
-      Script: {instanceID: 10988}
+      Script: {instanceID: 10990}
     - Class: 114
-      Script: {instanceID: 11142}
+      Script: {instanceID: 11144}
     - Class: 114
-      Script: {instanceID: 11206}
+      Script: {instanceID: 11208}
     - Class: 114
-      Script: {instanceID: 11376}
+      Script: {instanceID: 11378}
     - Class: 114
-      Script: {instanceID: 11658}
+      Script: {instanceID: 11660}
     - Class: 114
-      Script: {instanceID: 11714}
+      Script: {instanceID: 11716}
     - Class: 114
-      Script: {instanceID: 11870}
+      Script: {instanceID: 11872}
     - Class: 114
-      Script: {instanceID: 11892}
+      Script: {instanceID: 11894}
     - Class: 114
-      Script: {instanceID: 11928}
+      Script: {instanceID: 11930}
     - Class: 114
-      Script: {instanceID: 11936}
+      Script: {instanceID: 11938}
     - Class: 114
-      Script: {instanceID: 12824}
+      Script: {instanceID: 12826}
     - Class: 114
-      Script: {instanceID: 12888}
+      Script: {instanceID: 12890}
     - Class: 114
-      Script: {instanceID: 12990}
+      Script: {instanceID: 12992}
     - Class: 114
-      Script: {instanceID: 13148}
+      Script: {instanceID: 13150}
     - Class: 114
-      Script: {instanceID: 13302}
+      Script: {instanceID: 13304}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -526,7 +528,7 @@ ScriptsOnlyBuild:
     className: DemoManager
   - hash:
       serializedVersion: 2
-      Hash: 314fa8b4ac8e5003ee55cd72d452bc6e
+      Hash: a2311cbe66414755e4ae68dd01f4cd57
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PowerUp
@@ -898,7 +900,7 @@ ScriptsOnlyBuild:
     className: ParticleForceFieldsDemo
   - hash:
       serializedVersion: 2
-      Hash: 33c960bb29f244c9b717a8997332d90e
+      Hash: 4d0e8dc45b22f8b53e2bb390d5d31716
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PowerUpManager
@@ -934,7 +936,7 @@ ScriptsOnlyBuild:
     className: NetworkAnimator
   - hash:
       serializedVersion: 2
-      Hash: 0593ee35c081807c63c2b5fa58f640d2
+      Hash: fc0f7b794235418bf8add28c74b8dadd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player

@@ -14,11 +14,14 @@ public class Brick : MonoBehaviour
 
     private Renderer rend;
     
+    private int numTimesHit;
+    
     
     void Start()
     {
-    
-        rend = GetComponent<Renderer> ();
+
+        numTimesHit = 0;
+        rend = GetComponent<Renderer>();
 
         brightness = 1;
         saturation = 1;

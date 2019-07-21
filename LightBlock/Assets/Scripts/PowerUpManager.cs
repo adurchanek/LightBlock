@@ -14,6 +14,7 @@ public class PowerUpManager : MonoBehaviour
     //public  int numDrops;
     public ItemDefinition[] itemDefinitions;
     static Dictionary<PowerUpItemType, ItemDefinition> itemDict;
+    public GameObject powerup;
     
     // Start is called before the first frame update
     void Awake()
@@ -56,6 +57,8 @@ public class PowerUpManager : MonoBehaviour
 
 
 
+    
+    
 
 
 
@@ -104,7 +107,7 @@ public class PowerUpManager : MonoBehaviour
         //for (int i = 0; i < 100000000000000; i++) //TODO change to while loop
         while(true)
         {
-            SpawnDrop(drop);
+            SpawnDrop(powerup);
             float r = Random.Range(.5f, 2f);
             numDrops += 1;
             yield return new WaitForSeconds(r);
@@ -121,30 +124,32 @@ public class PowerUpManager : MonoBehaviour
     */
     
 
-    private void SpawnDrop(GameObject drop)
+    public void SpawnPowerUp( Transform t)
     {
         
-        /*
+        
         //TODO height and width for random spawn points
         float r = Random.Range(0f, 1f);
         //float width = Random.Range(0, top.transform.localScale.x);
         
-        float width = Random.Range(2, (int)(top.transform.localScale.x/brickPrefab.transform.localScale.x));
+        //float width = Random.Range(2, (int)(top.transform.localScale.x/brickPrefab.transform.localScale.x));
 
         
-        Vector3 pos = new Vector3(bottom.transform.position.x - bottom.transform.localScale.x/2 + width*brickPrefab.transform.localScale.x,bottom.transform.position.y, bottom.transform.position.z);
-        //Vector3 pos = new Vector3(bottom.transform.position.x - bottom.transform.localScale.x/2+width,bottom.transform.position.y, bottom.transform.position.z);
-        GameObject go = Instantiate(drop, pos, bottom.transform.rotation);
-        Movement movement = go.GetComponent<Movement>();
+        //Vector3 pos = new Vector3(bottom.transform.position.x - bottom.transform.localScale.x/2 + width*brickPrefab.transform.localScale.x,bottom.transform.position.y, bottom.transform.position.z);
+  
+        GameObject go = Instantiate(powerup, t.position, t.rotation);
+        
+        
+        PowerUp p = go.GetComponent<PowerUp>();
             
-        if (movement != null)
+        if (p != null)
 
         {
-            movement.initialize("Bottom",bottom, 1);
+
 			
         }
         
-        */
+        
     }
 
 

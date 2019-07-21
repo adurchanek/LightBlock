@@ -309,6 +309,8 @@ public class PlayerMovement : MonoBehaviour
                 b.SetColor();
             
             }
+
+            player.gm.GetComponent<PowerUpManager>().SpawnPowerUp(other.transform);
             
 
             

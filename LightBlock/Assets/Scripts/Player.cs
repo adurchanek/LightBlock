@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public int hitNumScore;
     public int highScore;
     private PlayerMovement playerMovement;
+
+    public GameObject gm;
     
     
     private void Awake()
@@ -16,7 +18,7 @@ public class Player : MonoBehaviour
         hitNumScore = 0;
         LoadPlayer();
         
-        Debug.Log("highscore: " + highScore);
+        //Debug.Log("highscore: " + highScore);
         playerMovement = GetComponent<PlayerMovement>();
 
     }

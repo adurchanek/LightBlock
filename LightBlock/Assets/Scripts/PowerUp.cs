@@ -1,10 +1,12 @@
 ﻿
 
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PowerUp : MonoBehaviour
 {
@@ -26,6 +28,7 @@ public class PowerUp : MonoBehaviour
     private Rigidbody rigid;
     //private BoundsCheck bndCheck;
     private Renderer cubeRend;
+    public Vector3 positionOffset;
     
     
     
@@ -48,7 +51,14 @@ public class PowerUp : MonoBehaviour
         rotPerSecond = new Vector3(Random.Range(rotMinMax.x, rotMinMax.y), Random.Range(rotMinMax.x, rotMinMax.y),Random.Range(rotMinMax.x, rotMinMax.y) );
         birthTime = Time.time;
     }
-    
+
+    private void Start()
+    {
+        //transform.position.y = positionOffset.y;
+        transform.position = new Vector3(transform.position.x,positionOffset.y,transform.position.z);
+
+    }
+
     // Update is called once per frame
     void Update()
     {

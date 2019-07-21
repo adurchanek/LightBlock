@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_LightBlock.833404959.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="_Materials" t="Include">
+          <e p="UnlitAlpha.shader" t="Include" />
+        </e>
+        <e p="Mirza Beig" t="Include">
+          <e p="_DOCS" t="Include">
+            <e p="README - Action VFX.txt" t="Include" />
+            <e p="README - Advanced Particle Scaler.txt" t="Include" />
+            <e p="README - Particle Force Fields.txt" t="Include" />
+            <e p="README - Particle Plexus.txt" t="Include" />
+            <e p="README - Storm VFX.txt" t="Include" />
+            <e p="README - Ultimate VFX.txt" t="Include" />
+          </e>
+          <e p="Editor Extensions" t="Include">
+            <e p="_Common" t="Include">
+              <e p="Editor" t="Include">
+                <e p="ParticleEditorUtility.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Utilities" t="Include">
+              <e p="Multi-Asset Renamer" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="MultiAssetRenamer.cs" t="Include" />
+                </e>
+                <e p="README.txt" t="Include" />
+              </e>
+              <e p="Particle Playback" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="ParticlePlayback.cs" t="Include" />
+                  <e p="ParticlePlaybackEditorWindow.cs" t="Include" />
+                  <e p="ParticlePlaybackExtensions.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Particle Scaler" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="ParticleScalerEditorWindow.cs" t="Include" />
+                  <e p="ParticleScalerExtensions.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Particle Systems" t="Include">
+            <e p="_Common" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="_Demo" t="Include">
+                  <e p="DemoManager.cs" t="Include" />
+                  <e p="FPSDisplay.cs" t="Include" />
+                  <e p="FPSTest.cs" t="Include" />
+                  <e p="LoopingParticleSystemsManager.cs" t="Include" />
+                  <e p="MouseFollow.cs" t="Include" />
+                  <e p="MouseRotateCamera.cs" t="Include" />
+                  <e p="OneshotParticleSystemsManager.cs" t="Include" />
+                  <e p="ParticleManager.cs" t="Include" />
+                </e>
+                <e p="AnimatedLight.cs" t="Include" />
+                <e p="Billboard.cs" t="Include" />
+                <e p="CameraShake.cs" t="Include" />
+                <e p="DestroyAfterTime.cs" t="Include" />
+                <e p="DestroyOnParticlesDead.cs" t="Include" />
+                <e p="DestroyOnTrailsDestroyed.cs" t="Include" />
+                <e p="ParticleSystems.cs" t="Include" />
+                <e p="ParticleSystemTimeRemap.cs" t="Include" />
+                <e p="PerlinNoise.cs" t="Include" />
+                <e p="RendererSortingOrder.cs" t="Include" />
+                <e p="RewindParticleSystem.cs" t="Include" />
+                <e p="RewindParticleSystemSimple.cs" t="Include" />
+                <e p="RewindParticleSystemSuperSimple.cs" t="Include" />
+                <e p="Rotator.cs" t="Include" />
+                <e p="TrailRenderers.cs" t="Include" />
+                <e p="TransformNoise.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="ASE Templates" t="Include">
+                  <e p="Particle Alpha Blend + TEXCOORD1.shader" t="Include" />
+                  <e p="Particle Alpha Blend Textureless.shader" t="Include" />
+                  <e p="Particle Anim Alpha Blend + MV Tex.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Ultimate VFX" t="Include">
+              <e p="Expansions" t="Include">
+                <e p="XP - STORM" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="StormVFXTerrainDemoCamera.cs" t="Include" />
+                    <e p="StormVFXTerrainDemoFollowTargetPosition.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="XP - TITLES" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="DemoManager_XPTitles.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Scripting" t="Include">
+            <e p="Effects" t="Include">
+              <e p="_Common" t="Include">
+                <e p="CreateLUT.cs" t="Include" />
+              </e>
+              <e p="Particle Affectors" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="AttractionParticleAffector.cs" t="Include" />
+                  <e p="Noise.cs" t="Include" />
+                  <e p="ParticleAffector.cs" t="Include" />
+                  <e p="TurbulenceParticleAffector.cs" t="Include" />
+                  <e p="VortexParticleAffector.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Particle Flocking" t="Include">
+                <e p="ParticleFlocking.cs" t="Include" />
+              </e>
+              <e p="Particle Force Fields" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="AttractionParticleForceField.cs" t="Include" />
+                  <e p="Noise2.cs" t="Include" />
+                  <e p="ParticleForceField.cs" t="Include" />
+                  <e p="TurbulenceParticleForceField.cs" t="Include" />
+                  <e p="VortexParticleForceField.cs" t="Include" />
+                </e>
+                <e p="Scripts (DEMO ONLY)" t="Include">
+                  <e p="ParticleForceFieldsDemo.cs" t="Include" />
+                  <e p="ParticleForceFieldsDemo_CameraRig.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Particle Lights" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="ParticleLights.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Particle Plexus" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="ParticlePlexus.cs" t="Include" />
+                </e>
+                <e p="Scripts (DEMO ONLY)" t="Include">
+                  <e p="ParticlePlexusDemo_CameraRig.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Roboto" t="Include">
+          <e p="LICENSE.txt" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Brick.cs" t="Include" />
+          <e p="BrickCollisionController.cs" t="Include" />
+          <e p="MainMenu.cs" t="Include" />
+          <e p="Movement.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="PlayerData.cs" t="Include" />
+          <e p="PlayerMovement.cs" t="Include" />
+          <e p="PowerUp.cs" t="Include" />
+          <e p="PowerUpItem.cs" t="Include" />
+          <e p="PowerUpManager.cs" t="Include" />
+          <e p="SaveManager.cs" t="Include" />
+          <e p="Score.cs" t="Include" />
+          <e p="WaveSpawner.cs" t="Include" />
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="LightBlock.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
