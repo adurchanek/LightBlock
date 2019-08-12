@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotMinMax: {x: 15, y: 90}
-  driftMinMax: {x: 0.12, y: 1}
+  driftMinMax: {x: 0.12, y: 0.5}
   lifeTime: 6
   fadeTime: 4
   type: 0

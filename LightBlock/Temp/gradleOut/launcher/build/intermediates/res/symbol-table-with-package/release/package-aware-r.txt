@@ -1,7 +1,0 @@
-com.MadameBlaze.RD
-mipmap app_icon
-string app_name
-string game_view_content_description
-style BaseUnityTheme
-style UnityThemeSelector
-style UnityThemeSelector_Translucent

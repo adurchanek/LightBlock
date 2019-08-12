@@ -1,4 +1,0 @@
-#Sat Jul 20 18:16:16 PDT 2019
-base.0=/Users/antonin/Unity/LightBlock/LightBlock/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/release/0
-path.0=classes.dex
-renamed.0=classes.dex
