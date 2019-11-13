@@ -31,9 +31,18 @@ public class WaveSpawner : MonoBehaviour
 
     public float spawnSpeed = .15f;
 
+    public void Awake()
+
+    {
+
+        Application.targetFrameRate = 60;
+    }
+
     public void Start()
 
     {
+        
+        //Application.targetFrameRate = 60;
         numBricks = 0;
 
         

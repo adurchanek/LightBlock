@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Brick : MonoBehaviour
 {
+
+    //Brick class
     public Shader shader;
     public Texture texture;
     public Color color;
