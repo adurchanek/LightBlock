@@ -1,7 +1,4 @@
-﻿
-
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 //using UnityEngine.WSA;
@@ -9,8 +6,6 @@ using UnityEngine;
 
 public enum PowerUpItemType
 {
-    
-    
     none,
     currency,
     increaseSize,
@@ -27,21 +22,11 @@ public class ItemDefinition
     public int value;
     public float sizeChange;
     public float brickHitAoeRadius;
-
-
-
-
-
-
 }
 
 
 
 public class PowerUpItem : MonoBehaviour
 {
-
-    
-    
-    
 }
 

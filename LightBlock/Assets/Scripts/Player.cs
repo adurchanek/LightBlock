@@ -9,18 +9,13 @@ public class Player : MonoBehaviour
     public int hitNumScore;
     public int highScore;
     private PlayerMovement playerMovement;
-
     public GameObject gm;
-    
-    
+
     private void Awake()
     {
         hitNumScore = 0;
         LoadPlayer();
-        
-        //Debug.Log("highscore: " + highScore);
         playerMovement = GetComponent<PlayerMovement>();
-
     }
     
     public void SavePlayer()
@@ -29,18 +24,14 @@ public class Player : MonoBehaviour
         {
             SaveManager.SavePlayer(this);
         }
-
-
     }
     
     public void LoadPlayer()
     {
-        
         PlayerData data = SaveManager.LoadPlayer();
 
         if (data == null)
         {
-            
             //TODO initialize fresh
             highScore = 0;
         }
@@ -48,13 +39,10 @@ public class Player : MonoBehaviour
         {
             highScore = data.highScore;
         }
-        
     }
-    
     
     public void AbsorbPowerUp(GameObject go)
     {
-
         PowerUp pu = go.GetComponent<PowerUp>();
 
         switch (pu.type)
@@ -69,10 +57,6 @@ public class Player : MonoBehaviour
                 break;
             
         }
-
         pu.AbsorbedBy(this.gameObject);
     }
-    
-    
-    
 }

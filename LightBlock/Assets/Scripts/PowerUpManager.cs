@@ -1,15 +1,9 @@
-﻿
-
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PowerUpManager : MonoBehaviour
-
-
 {
-    
     //public GameObject drop;
     //public  int numDrops;
     public ItemDefinition[] itemDefinitions;
@@ -20,15 +14,11 @@ public class PowerUpManager : MonoBehaviour
     void Awake()
     {
         //numDrops = 0;
-        
         itemDict = new Dictionary<PowerUpItemType, ItemDefinition>();
-
         foreach (ItemDefinition def in itemDefinitions)
         {
             itemDict[def.type] = def;
         }
-
-
         //StartCoroutine(SpawnDrops());
     }
 
@@ -40,11 +30,8 @@ public class PowerUpManager : MonoBehaviour
 
     static public ItemDefinition GetItemDefinition(PowerUpItemType itemType)
     {
-
-
         if (itemDict.ContainsKey(itemType))
         {
-
             return itemDict[itemType];
         }
 

@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class BrickCollisionController : MonoBehaviour
 {
-    
-    
-    //public GameObject top;
-    //public GameObject bottom;
-
     private string location;
-
     
     // Start is called before the first frame update
     void Start()
@@ -22,14 +16,11 @@ public class BrickCollisionController : MonoBehaviour
         {
             this.location = movement.location;
         }
-
-
     }
     
     // Start is called before the first frame update
     void Awake()
     {
-        
         
     }
 
@@ -39,11 +30,8 @@ public class BrickCollisionController : MonoBehaviour
         
     }
     
-    
     private void OnTriggerEnter(Collider other)
     {
-        
-        //Debug.Log("ENTERED!!!!");
         if (location == "")
         {
             location = GetComponent<Movement>().location;
@@ -55,30 +43,21 @@ public class BrickCollisionController : MonoBehaviour
                 //Debug.Log("IGNORE");
             }
             else if (other.CompareTag("Bottom"))
-
             {
-
-                //Debug.Log("DESTROY");
                 Destroy(gameObject);
             }
         }
         else
         {
-            
             if (other.CompareTag("Top"))
             {
                 //Debug.Log("DESTROY");
                 Destroy(gameObject);
             }
             else if (other.CompareTag("Bottom"))
-
             {
-
                 //Debug.Log("IGNORE");
             }
-
         }
     }
-    
-    
 }

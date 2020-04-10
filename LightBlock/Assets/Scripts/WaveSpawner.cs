@@ -6,50 +6,29 @@ public class WaveSpawner : MonoBehaviour
 {
     public GameObject top;
     public GameObject bottom;
-    
     public GameObject brickPrefab;
     public float viewport = .5625f;
-    
-
-    
-    
     public int numBricks;
     //public Transform enemyPrefab;
-
     //public Wave[] waves;
-
-
     public float timeBetweenWaves = 5f;
-
     //private float countdown = 2f;
-
     private int waveIndex = 0;
-
     //public Transform spawnPoint;
-
     //public Text countdownText;
-
     public float spawnSpeed = .15f;
 
     public void Awake()
-
     {
-
         Application.targetFrameRate = 60;
     }
 
     public void Start()
-
     {
-        
         //Application.targetFrameRate = 60;
         numBricks = 0;
-
-        
-        
         //float newWidth = Screen.width;
         //Vector2 v = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width,Screen.height));
-        
         //Vector2 v = Camera.main.ScreenToViewportPoint(new Vector3(0,0, 0));
         
         Ray ray = Camera.main.ScreenPointToRay(new Vector3(0,0,0));
@@ -57,8 +36,6 @@ public class WaveSpawner : MonoBehaviour
         float distance;
         xy.Raycast(ray, out distance);
         Vector3 v = ray.GetPoint(distance);
-        
-
         top.transform.localScale = new Vector3(top.transform.localScale.x*(Camera.main.aspect/viewport), top.transform.localScale.y, top.transform.localScale.z);
         bottom.transform.localScale = new Vector3(bottom.transform.localScale.x*(Camera.main.aspect/viewport), bottom.transform.localScale.y, bottom.transform.localScale.z);
     }
@@ -66,7 +43,6 @@ public class WaveSpawner : MonoBehaviour
 
     private void Update()
     {
-        
         //top.transform.localScale = new Vector3(top.transform.localScale.x*(Camera.main.aspect/viewport), top.transform.localScale.y, top.transform.localScale.z);
         //bottom.transform.localScale = new Vector3(top.transform.localScale.x*(Camera.main.aspect/viewport), bottom.transform.localScale.y, bottom.transform.localScale.z);
 
@@ -83,74 +59,21 @@ public class WaveSpawner : MonoBehaviour
             
             //top.transform.localScale = new Vector3(top.transform.localScale.x*(Camera.main.aspect/viewport), top.transform.localScale.y, top.transform.localScale.z);
             //bottom.transform.localScale = new Vector3(top.transform.localScale.x*(Camera.main.aspect/viewport), bottom.transform.localScale.y, bottom.transform.localScale.z);
-
         }
-
-
-
+        
         if (numBricks < 2)
-
         {
             
             StartCoroutine(SpawnWave());
         }
-
-//        if (enemiesAlive > 0)
-//
-//        {
-//            return;
-//        }
-//
-//        if (countdown <= 0f)
-//        {
-//            StartCoroutine(SpawnWave());
-//            countdown = timeBetweenWaves;
-//            return;
-//
-//        }
-//		
-//        countdown -= Time.deltaTime;
-//		
-//        countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
-//        countdownText.text = string.Format("{0:0.0}",countdown);
-//		
-//        
     }
 
-//    IEnumerator SpawnWave()
-//    {
-//        PlayerStats.rounds += 1;
-//
-//        Wave wave = waves[waveIndex];
-//
-//        for (int i = 0; i < wave.count; i++)
-//        {
-//            SpawnEnemy(wave.enemy);  
-//            
-//            yield return new WaitForSeconds(1f/wave.rate);
-//        }
-//
-//        waveIndex += 1;
-//
-//        if (waveIndex == waves.Length)
-//
-//        {
-//			
-//            Debug.Log("Level won");
-//            enabled = false;
-//
-//        }
-//
-//        //EnemyMovement.speed += spawnSpeed;
-//    }
 
-
+    
     IEnumerator SpawnWave()
     {
         //PlayerStats.rounds += 1;
-
         //Wave wave = waves[waveIndex];
-
         //for (int i = 0; i < 100000000000000; i++) //TODO change to while loop
         while(true)
         {
@@ -159,25 +82,15 @@ public class WaveSpawner : MonoBehaviour
             numBricks += 1;
             yield return new WaitForSeconds(r);
         }
-
-        
-
-
-
         //EnemyMovement.speed += spawnSpeed;
     }
 
     private void SpawnBrick(GameObject brick)
     {
-
-
         float r = Random.Range(0f, 1f);
         //float width = Random.Range(0, top.transform.localScale.x);
-        
         float width = Random.Range(2, (int)(top.transform.localScale.x/brickPrefab.transform.localScale.x));
-        
         //Debug.Log(brickPrefab.transform.localScale.x);
-        
         
         if (r < .5)
         {
@@ -185,16 +98,12 @@ public class WaveSpawner : MonoBehaviour
             GameObject go = Instantiate(brick, pos, top.transform.rotation);
             Movement movement = go.GetComponent<Movement>();
             if (movement != null)
-
             {
                 movement.initialize("Top",top, -1);
-			
             }
-            
         }
         else
         {
-            
             //Debug.Log(r);
             Vector3 pos = new Vector3(bottom.transform.position.x - bottom.transform.localScale.x/2 + width*brickPrefab.transform.localScale.x,bottom.transform.position.y, bottom.transform.position.z);
             //Vector3 pos = new Vector3(bottom.transform.position.x - bottom.transform.localScale.x/2+width,bottom.transform.position.y, bottom.transform.position.z);
@@ -202,15 +111,10 @@ public class WaveSpawner : MonoBehaviour
             Movement movement = go.GetComponent<Movement>();
             
             if (movement != null)
-
             {
                 movement.initialize("Bottom",bottom, 1);
-			
             }
-
         }
-        
-
         numBricks += 1;
     }
     
@@ -221,5 +125,4 @@ public class WaveSpawner : MonoBehaviour
         xy.Raycast(ray, out distance);
         return ray.GetPoint(distance);
     }
-    
 }

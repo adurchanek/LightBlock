@@ -8,13 +8,10 @@ using UnityEngine;
 public class PlayerData
 {
     public int highScore;
-
-
+    
     public PlayerData(Player p )
 
     {
         highScore = p.hitNumScore;
-
     }
-    
 }

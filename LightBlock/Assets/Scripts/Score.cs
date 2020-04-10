@@ -14,16 +14,13 @@ public class Score : MonoBehaviour
     public GameObject player;
     private Player playerScript;
 
-    
+    ///
     // Start is called before the first frame update
     void Start()
     {
         playerScript = player.GetComponent<Player>();
-        
-        //Debug.Log("start: " + playerScript.hitNumScore);
         scoreText.text = hitNumScore.ToString();
         highScoreText.text = playerScript.highScore.ToString();
-
     }
 
     // Update is called once per frame
